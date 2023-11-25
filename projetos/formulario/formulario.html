@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right,rgb(135, 140, 143),rgb(8, 24, 34));
+        }
+        .box{
+            color: white;
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-color: rgb(1, 4, 14);
+            padding: 20px;
+            border-radius: 15px;
+        }
+        fieldset{
+            border: 3px solid rgb(55, 33, 180);
+            align-self: center;
+        }
+        legend{
+            border: 2px solid rgb(1, 10, 20);
+            padding: 10px;
+            text-align: center;
+            background-color: rgb(1, 6, 12);
+            border-radius: 5px;
+            
+        }
+        .inputbox{
+            position: relative;
+        }
+        .inputuser{
+            border: none;
+            background: none;
+            border-bottom:1px solid white;
+            outline: none;
+            color: white;
+            font-size: 15px;
+            width: 100%;
+            letter-spacing: 2px;
+        }
+        .labelinput{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            pointer-events: none;
+            transition: 5px;
+        }
+        .inputuser:focus ~ .labelinput{
+           top: -20px;
+           font-size: 12px;
+           color: white; 
+        }
+        #submit{
+            color: rgb(250, 241, 241);
+            background-image:linear-gradient( rgb(62, 62, 66),rgb(6, 6, 22))  ;
+            width: 100%;
+            height: 100%;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <form action="">
+            <fieldset>
+                <legend>formulario</legend>
+                <br><br>
+            <div class="inputbox">
+
+                <input type="text" name="nome" id="nome" class="inputuser" required>
+                <label for="nome" class="labelinput">Nome de Usuario</label>
+            </div>
+            <br></br>
+            <div class="inputbox">
+                <input type="text" name="sobrenome" id="sobrenome" class="inputuser" required>
+                <label for="sobrenome" class="labelinput">Sobrenome</label>
+            </div>
+            <br></br>
+            <div class="inputbox">
+                <input type="tel" name="telefone" id="telefone" class="inputuser" required>
+                <label for="telefone" class="labelinput">Seu telefone</label>
+            </div>
+            <br></br>
+            <div class="inputbox">
+                <input type="e-mail" name="email" id="email" class="inputuser" required>
+                <label for="email" class="labelinput">e-mail válido</label>
+            </div>
+            <br></br>
+            <div class="inputbox">
+            <p>Sexo</p>
+                <input type="radio" id="feminino" name="genero" value="feminino">
+                <label for ="feminino">feminino</label>
+                <input type="radio" id="masculino" name="genero" value="masculino">
+                <label for="masculino">masculino</label>
+            </div>
+            <br></br>
+            <div class="inputbox">
+                <label for="data_nascimento">Data nascimento</label>
+                <input type="date" id="data_nascimento" name="data_nascimento" class="inputuser">
+            </div>
+            <br></br>
+            <div class="inputbox">
+                <input type="text" id="cidade" name="cidade" class="inputuser">
+                <label for="cidade" class="labelinput">Sua cidade</label>   
+            </div>
+            <br></br>
+            <div class="inputbox">
+                <input type="text" id="estado" name="estado" class="inputuser">
+                <label for="estado" class="labelinput">Estado</label>
+            </div>
+            <br></br>
+            <div class="inputbox">
+                <input type="text" name="endereco" id="endereco" class="inputuser">
+                <label for="endereco" class="labelinput">Endereço</label>
+            </div>
+            <br></br>
+            <div class="inputbox">
+                <input type="submit" name="submit" id="submit">
+            </div>
+            <br></br>
+
+        </fieldset>
+        </div>
+        </form>
+    </div>
+</body>
+</html>
