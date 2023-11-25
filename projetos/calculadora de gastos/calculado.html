@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULADORA GASTOS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="corpo">
+
+    <div class="menu_superior">
+
+        <div class="container">
+            <img src="imgs/png logo.png" alt="" width="100px" height="100px" id="img_logo">
+            <h1>CALCULADORA DE GASTOS </h1><h2>por Programador Baixinho</h2>
+        </div>
+
+    </div>
+    <br><br>
+    
+
+    <div class="menu_interno">
+
+        <div class="area_preenchimento_usuario">
+            
+            <label>MÊS ATUAL :</label>
+            <input type="month" id="mes_atual" required><h4 id="mes_ref"></h4><br>
+
+
+            <label>DESCREVA O SEU GASTO</label><br><br>
+            <input type="text" placeholder="Descreva o gasto ex.. Água,Luz,telefone..." id="descricao_gasto"><br><br>
+            <label>QUAL O VALOR GASTO?</label><br><br>
+            <input type="number" placeholder="ex...R$0,00" id="valor_gasto"><br><br>
+            <button type="submit" id="cadastro_gasto" onclick="adicionarGasto()">CADASTRAR</button>
+            <br><br><br>
+            <div id="soma">
+        
+            </div>
+            
+            <button id="salvar" onclick="salvar()">SALVAR</button>
+            
+                
+        
+        </div>  
+        
+        <div class="area_tabela">
+            <h2>DESCRIÇÃO DO GASTO</h2> <h3>VALOR GASTO</h3><br><br><br>
+            
+
+            <div class="tabela" id="tabela">
+                
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<div id="tabela_salvar">
+
+</div>
+<p id="somatotal">
+
+</p>
+
+    <script src="calculadoragastos.js"></script>
+</body>
+</html>
