@@ -1,0 +1,229 @@
+
+ul li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+   
+}
+
+ul{
+ 
+    padding: 0;
+   
+}
+.container{
+    
+
+    margin: 0 auto;
+    width: 1200px;
+    position: relative;
+   
+}
+.cabecalho{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100px;
+   
+}
+.cabecalho .logo{
+    margin-top: -50px;
+    position: relative;
+    float: left;
+}
+.cabecalho .menu li {
+    position: relative;
+    float: right;
+    padding-left: 20px;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.banner{
+    width: 100%;
+    height: 500px;
+    background: url(imgs/fundo-banner.jpg) center;
+    background-repeat: no-repeat;
+    position: relative;
+    float: left;
+}
+.banner .texto_banner{
+    position: relative;
+    float: right;
+    width: 42%;
+    height: 400px;
+    color: rgb(37, 37, 37);
+}
+.banner span{
+    position: relative;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: aliceblue;
+    font-weight: 400;
+}
+.banner h1{
+    font-size: 45px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+.banner h3{
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    color: aliceblue;
+}
+.produtos {
+   
+    width: 100%;
+    position: relative;
+    float: left;
+}
+
+.produtos h1{
+    
+    font-family: 'Montserrat', sans-serif;
+}
+.produtos  a{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: green;
+    font-weight: 600;
+}
+.cont_produtos{
+    margin-top: 50px;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    
+}
+
+.cont_produtos ul li{
+    position: relative;
+    width: 33%;
+    float: left;
+
+}
+.cont_produtos p{
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+.cont_produtos h2{
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.empresas{
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    position: relative;
+    float: left;
+    margin-top: 150px;
+    border-top: 2px solid rgb(218, 215, 215);
+    
+}
+.empresas img{
+    margin-top: 100px;
+    position: relative;
+    float: left;
+    margin-left: 30px;
+}
+.area_atuacao{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 900px;
+    background: url(imgs/fundo-area-atuacao.jpg)center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.area_atuacao img{
+  
+    position: relative;
+    margin-top: 200px;
+    
+}
+.area_atuacao h1{
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: 800;
+    font-size: 45px;
+
+}
+.area_atuacao h3{
+    position: relative;
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+    
+}
+#btn_area_atuacao{
+    position: relative;
+    width: 200px;
+    height: 60px;
+    border-radius: 50px;
+    border-color: green;
+    background-color: transparent;
+    color: white;
+    margin-top: 100px;
+
+}
+.area_atuacao .txt_area_atuacao{
+    width: 40%;
+    height: 300px;
+    position: relative;
+    margin-top: 200px;
+    background-color: black;
+}
+.sobre_a_empresa{
+    width: 100%;
+    height: 500px;
+    background-color: rgba(233, 232, 232, 0.671);
+    position: relative;
+    float: left;
+    margin-bottom: 100px;
+}
+.sobre_a_empresa img{
+    
+    float: right;
+    position: relative;
+    
+}
+.sobre_a_empresa h1{
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    float: left;
+    margin-top: 100px;
+    font-weight: 800;
+    color: rgb(88, 88, 88);
+    font-size: 40px;
+    
+}
+.sobre_a_empresa h3{
+    position: relative;
+    float: left;
+    width: 40%;
+    font-family: 'Montserrat', sans-serif;
+    color: gray;
+    font-weight: 300;
+}
+.sobre_a_empresa a{
+    position: relative;
+    float: left;
+    color: green;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+}
+.rodape{
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    position: relative;
+    margin-top: 100px;
+}
+
+
+
