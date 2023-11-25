@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.imagens{
+    position: relative;
+    margin: 0 auto;
+    width: 1300px;
+    height: 400px;
+    
+}
+button{
+    width: 45px;
+    height: 400px;
+    margin: 0;
+}
+img{
+    opacity: 0.5;
+}
+#voltarbtn{
+    position: relative;
+    float: left;
+    margin: 0;
+}
+#avancarbtn{
+    position: relative;
+    float: right;
+    margin: 0;
+}
+.mostrar{
+    opacity: 1;
+}
