@@ -1,6 +1,5 @@
     const funcionarios = [
-      /*
-      seguem os exemplos para seguir pode apenas copiar e alterar só o que é preciso
+    
     { 
       nome: 'joao',
       dataAdmissao: new Date('2020-03-15'),
@@ -20,7 +19,7 @@
       ferias: true
     },
    
-    */
+   
   ];
   const funcionariosComFeriasVencidas = [];
 
