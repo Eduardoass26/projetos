@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Animação de Loading</title>
+  <style>
+    #loadingSpinner {
+      width: 40px;
+      height: 40px;
+      border: 4px solid #f3f3f3;
+      border-top: 4px solid #3498db;
+      border-radius: 50%;
+      margin: 20px auto;
+      animation: spin 2s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div id="loadingSpinner"></div>
+
+  <script>
+    // Simulação de carregamento
+    setTimeout(function() {
+      var loadingSpinner = document.getElementById("loadingSpinner");
+      loadingSpinner.style.display = "none";
+    }, 3000);
+  </script>
+</body>
+</html>
