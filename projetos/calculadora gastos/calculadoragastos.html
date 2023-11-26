@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora gastos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="logo">
+        <h1>calculadora gastos</h1>
+    </div>
+
+    <div class="menu_tela">
+
+        <input type="text" id="Descricao_gasto" placeholder="tipo do gasto água luz combustivel etc.. apenas letras e caracteres">
+        <input type="number" id="Valor_gasto" placeholder="o valor gasto por favor apenas números">
+        <button id="adicionar">adicionar</button>
+        <p id="alerta_Input_Vazio"></p>
+        <div class="tabela">
+            
+  <table>
+    <thead>
+      <tr>
+        <th>Descrição dos Gastos</th>
+        <th>Valor Gasto</th>
+      </tr>
+    </thead>
+    <tbody id="corpo_Tabela">
+     
+
+    </tbody>
+
+    <tr id="valor_total">
+      <td>Total </td>
+      <td>R$ 0 </td>
+  </tr>
+  </table>
+        </div>
+
+    </div>
+
+    <script src="calculador.js"></script>
+</body>
+</html>
