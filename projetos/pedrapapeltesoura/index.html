@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .game-container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        .align {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .options-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .options-container img {
+            max-width: 150px;
+            opacity: 0.6;
+            cursor: pointer;
+            transition: opacity 0.3s ease-in-out;
+            margin: 10px;
+        }
+
+        .options-container img:hover {
+            opacity: 1;
+        }
+
+        .vencedor {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+    <title>Pedra, Papel ou Tesoura</title>
+</head>
+<body>
+    <div class="game-container">
+        <h1>Pedra, papel ou tesoura!</h1>
+        <h2 class="vencedor"></h2>
+        <hr>
+        <div class="align">
+            <div class="options-container player-options">
+                <div><img opt="pedra" src="rock.png" alt="Pedra"></div>
+                <div><img opt="papel" src="paper.png" alt="Papel"></div>
+                <div><img opt="tesoura" src="scisor.png" alt="Tesoura"></div>
+            </div>
+            <div class="options-container enemy-options">
+                <div><img opt="pedra" src="rock.png" alt="Pedra"></div>
+                <div><img opt="papel" src="paper.png" alt="Papel"></div>
+                <div><img opt="tesoura" src="scisor.png" alt="Tesoura"></div>
+            </div>
+        </div>
+    </div>
+   
+
+
+    <script>
+         var elementos = document.querySelectorAll('.player-options div > img');
+            var playerOpt = "";
+            var inimigoOpt = "";
+
+            function validarVitoria(){
+
+                let vencedor = document.querySelector('.vencedor');
+                 
+                if(playerOpt == "papel"){
+
+                    if(inimigoOpt == "papel"){
+                      
+                        vencedor.innerHTML = "O jogo foi empatado";
+                    }else if(inimigoOpt == "tesoura"){
+                       
+                        vencedor.innerHTML = "O inimigo ganhou";
+                    }else if(inimigoOpt == "pedra"){
+                      
+                        vencedor.innerHTML = "O player ganhou";
+                    }
+
+
+                }
+
+
+                if(playerOpt == "tesoura"){
+
+                    if(inimigoOpt == "papel"){
+                        
+                        vencedor.innerHTML = "O player ganhou";
+                    }else if(inimigoOpt == "tesoura"){
+                      
+                        vencedor.innerHTML = "O jogo foi empatado";
+                    }else if(inimigoOpt == "pedra"){
+                    
+                        vencedor.innerHTML = "O inimigo ganhou";
+                    }
+
+
+                }
+
+                if(playerOpt == "pedra"){
+
+                if(inimigoOpt == "papel"){
+                 
+                    vencedor.innerHTML = "O inimigo ganhou";
+                }else if(inimigoOpt == "tesoura"){
+               
+                    vencedor.innerHTML = "O player ganhou";
+                }else if(inimigoOpt == "pedra"){
+                
+                    vencedor.innerHTML = "O jogo foi empatado";
+                    
+                }
+
+
+                }
+
+
+
+            }
+
+            function resetInimigo(){
+                const enemyOptions = document.querySelectorAll('.enemy-options div');
+                for(var i = 0; i < enemyOptions.length; i++){
+                   
+                enemyOptions[i].childNodes[0].style.opacity = 0.3;
+                    
+                }
+            }
+
+            function inimigoJogar(){
+                let rand = Math.floor(Math.random()*3);
+
+                const enemyOptions = document.querySelectorAll('.enemy-options div');
+                resetInimigo();
+                for(var i = 0; i < enemyOptions.length; i++){
+                    if(i == rand){
+                        enemyOptions[i].childNodes[0].style.opacity = 1;
+                        inimigoOpt = enemyOptions[i].childNodes[0].getAttribute('opt');
+                    }
+
+                }
+
+
+                validarVitoria();
+
+
+            
+
+            }
+
+            function resetOpacityPlayer(){
+                for(var i = 0; i < elementos.length; i++){
+                    elementos[i].style.opacity = 0.3;
+                }
+            }
+
+            for(var i = 0; i < elementos.length; i++){
+                elementos[i].addEventListener('click',function(t){
+                    resetOpacityPlayer();
+                    t.target.style.opacity = 1;
+                    playerOpt = t.target.getAttribute('opt');
+
+                    inimigoJogar();
+
+                   // alert(playerOpt);
+                });
+            }
+
+        
+    </script>
+</body>
+</html>
