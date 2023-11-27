@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="box">
+        <h1>Quer ser Minha Mulher para Sempre?</h1>
+        <button class="sim" name="sim" id="sim">Sim</button>
+        <button class="nao">Não</button>
+    </div>
+    
+    <script>
+        // Obtém a referência para o botão "Sim" pelo ID
+        const botaoSim = document.getElementById('sim');
+
+        // Adiciona o evento de clique ao botão "Sim"
+        botaoSim.addEventListener('click', function() {
+            // Cria um elemento <img>
+            const imagem = document.createElement('img');
+            imagem.src = '1.jpg';
+            imagem.classList.add('tela-cheia');
+
+            // Adiciona a imagem ao corpo da página
+            document.body.appendChild(imagem);
+        });
+
+        // Obtém a referência para o botão "Não" pela classe
+        const botaoNao = document.querySelector('.nao');
+
+        // Adiciona o evento de clique ao botão "Não"
+        botaoNao.addEventListener('click', function() {
+            const imagem2 = document.createElement('img');
+            imagem2.src = '2.jpg';
+            imagem2.classList.add('tela-cheia');
+            document.body.appendChild(imagem2);
+        });
+            
+    </script>
+</body>
+
+</html>

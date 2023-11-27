@@ -1,0 +1,44 @@
+body {
+  background-color: #ffe6e6; /* Um tom suave de vermelho claro para o fundo */
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+}
+
+.box {
+  background-color: #ffcccc; /* Um tom mais claro de vermelho para o contêiner principal */
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  margin: 50px auto;
+  width: 80%;
+  max-width: 400px;
+}
+
+h1 {
+  color: #ff3366; /* Vermelho mais escuro para o título */
+}
+
+.sim, .nao {
+  background-color: #ff3366; /* Vermelho mais escuro para os botões */
+  color: #fff; /* Texto branco nos botões */
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.sim:hover, .nao:hover {
+  background-color: #cc0033; /* Tom mais escuro de vermelho ao passar o mouse nos botões */
+}
+
+img.tela-cheia {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}

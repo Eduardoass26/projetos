@@ -1,0 +1,11 @@
+.container{
+    width: 100%;
+    height: 500px;
+    text-align: center;
+}
+.imagem{
+    opacity: 0.5;
+}
+.ativa{
+    opacity: 1;
+}
